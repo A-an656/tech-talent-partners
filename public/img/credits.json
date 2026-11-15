@@ -1,0 +1,92 @@
+{
+ "note": "Credits for the photographs in this folder: photos.mjs credits prints the footer block for the ones the pages use.",
+ "photos": [
+  {
+   "file": "photo-f61684334.jpg",
+   "files": [
+    "photo-f61684334-500.jpg",
+    "photo-f61684334-960.jpg",
+    "photo-f61684334.jpg"
+   ],
+   "id": "f61684334",
+   "alt": "Programmer at work (Unsplash)",
+   "by": "Crew crew",
+   "licence": "CC0",
+   "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Programmer_at_work_(Unsplash).jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f200381495.jpg",
+   "files": [
+    "photo-f200381495-500.jpg",
+    "photo-f200381495-960.jpg",
+    "photo-f200381495.jpg"
+   ],
+   "id": "f200381495",
+   "alt": "Coworking space 2026-09-27",
+   "by": "JustWritingHere",
+   "licence": "CC0",
+   "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Coworking_space_2026-09-27.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f86419362-960.jpg",
+   "files": [
+    "photo-f86419362-500.jpg",
+    "photo-f86419362-960.jpg"
+   ],
+   "id": "f86419362",
+   "alt": "CM Deep Ellum 12122018-28 (1)",
+   "by": "Thecommondesk",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:CM_Deep_Ellum_12122018-28_(1).jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f26575836-960.jpg",
+   "files": [
+    "photo-f26575836-500.jpg",
+    "photo-f26575836-960.jpg"
+   ],
+   "id": "f26575836",
+   "alt": "BalticServers data center",
+   "by": "BalticServers.com",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f95541909.jpg",
+   "files": [
+    "photo-f95541909-500.jpg",
+    "photo-f95541909-960.jpg",
+    "photo-f95541909.jpg"
+   ],
+   "id": "f95541909",
+   "alt": "Call center (8301477546)",
+   "by": "Carlos Ebert from São Paulo, BrazilGRU",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Call_center_(8301477546).jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f84610204-960.jpg",
+   "files": [
+    "photo-f84610204-500.jpg",
+    "photo-f84610204-960.jpg"
+   ],
+   "id": "f84610204",
+   "alt": "Coworking Audiovisual NOLICH",
+   "by": "Espacio Nolich",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Coworking_Audiovisual_NOLICH.jpg",
+   "source": "Wikimedia Commons"
+  }
+ ]
+}
