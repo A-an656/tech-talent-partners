@@ -284,13 +284,25 @@ function Hire() {
         </div>
 
         <ol className="relative grid content-start gap-4 lg:pt-28">
-          {/* progress line that draws as the steps come in */}
-          <motion.span aria-hidden="true" className="absolute bottom-24 left-[2.35rem] top-4 hidden w-px origin-top bg-gradient-to-b from-amber to-sky sm:block lg:top-32"
-            initial={{ scaleY: 0 }} whileInView={{ scaleY: 1 }} viewport={{ once: true, margin: '-120px' }}
-            transition={{ duration: 1.4, ease }} />
+          {/* moving colour behind the glass so the liquid bend is visible */}
+          <div aria-hidden="true" className="pointer-events-none absolute -inset-10 overflow-hidden lg:top-16"
+            style={{ maskImage: 'radial-gradient(ellipse 70% 65% at 50% 50%, black 55%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse 70% 65% at 50% 50%, black 55%, transparent 100%)' }}>
+            <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgb(11 18 32 / .08) 1px, transparent 1px), linear-gradient(90deg, rgb(11 18 32 / .08) 1px, transparent 1px)', backgroundSize: '36px 36px' }} />
+            {[
+              { c: '#f2b84b', w: 260, l: '5%', t: '4%', d: 11 },
+              { c: '#38a8ff', w: 300, l: '55%', t: '18%', d: 13 },
+              { c: '#2fd4a8', w: 240, l: '10%', t: '52%', d: 12 },
+              { c: '#ff7a59', w: 220, l: '60%', t: '70%', d: 14 },
+            ].map((b, i) => (
+              <motion.div key={i} className="absolute rounded-full blur-2xl"
+                style={{ width: b.w, height: b.w, left: b.l, top: b.t, background: b.c, opacity: 0.7 }}
+                animate={{ x: [0, 60, -40, 0], y: [0, -50, 40, 0] }}
+                transition={{ duration: b.d, repeat: Infinity, ease: 'easeInOut' }} />
+            ))}
+          </div>
           {STEPS.map((s, i) => (
             <Rise key={s.t} delay={0.08 * i}>
-              <Glass as="li" tone="light" className="list-none transition-transform duration-200 hover:-translate-y-0.5">
+              <Glass as="li" tone="clear" className="list-none transition-transform duration-200 hover:-translate-y-0.5">
                 <div className="flex gap-5 p-6">
                   <span className="relative grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-ink text-amber">
                     <s.icon size={20} />
@@ -298,7 +310,7 @@ function Hire() {
                   <span>
                     <span className="block text-xs font-semibold tracking-widest text-amber-deep">STEP 0{i + 1}</span>
                     <span className="block font-display text-xl font-bold">{s.t}</span>
-                    <span className="mt-1 block text-muted">{s.d}</span>
+                    <span className="mt-1 block text-ink/75">{s.d}</span>
                   </span>
                 </div>
               </Glass>

@@ -41,7 +41,7 @@ export function Glass({ as = 'div', tone = 'dark', className = '', radius, child
   const Tag = typeof as === 'string' ? motion[as] : as
   return (
     <Tag
-      className={`lg ${tone === 'white' ? 'lg-light lg-white' : tone === 'light' ? 'lg-light' : 'lg-dark'} ${className}`}
+      className={`lg ${tone === 'clear' ? 'lg-light lg-clear' : tone === 'white' ? 'lg-light lg-white' : tone === 'light' ? 'lg-light' : 'lg-dark'} ${className}`}
       style={{ ...(radius ? { '--lg-r': radius } : null), ...style }}
       onPointerMove={track}
       {...rest}
